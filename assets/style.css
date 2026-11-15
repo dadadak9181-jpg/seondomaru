@@ -55,3 +55,25 @@ html,body{overflow-x:clip}
 
 /* Unified Pretendard typography: all pages, components and mobile */
 html,body,button,input,select,textarea{font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+
+/* SUNDOMARU FINAL 860 RESPONSIVE FIX */
+html,body{width:100%;margin:0;overflow-x:clip}
+body{background:#eeeeec;font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+.page{width:100%;max-width:860px;margin-inline:auto;box-sizing:border-box;background:#fff;overflow:clip}
+.page img{max-width:100%}
+.story-art{box-sizing:border-box;width:100%;min-height:0;aspect-ratio:912 / 1136;background-size:cover;background-position:center;background-repeat:no-repeat;padding:clamp(25px,4.2vw,42px) clamp(20px,5.3vw,46px)}
+.story-art::before{display:none!important}
+.story-art-copy{max-width:690px}
+@media(max-width:767px){
+ .page{max-width:860px;width:100%}
+ .panel{padding:62px 20px}
+ .story-art{aspect-ratio:auto;min-height:max(650px,145vw);background-size:cover;background-position:center;padding:34px 20px 40px}
+ .story-art-copy{max-width:100%;padding:12px 10px 16px;background:rgba(255,252,245,.78);border-radius:3px}
+ .story-art h2{font-size:clamp(25px,7vw,34px);line-height:1.35}
+ .story-lines{font-size:clamp(16px,4.3vw,18px);line-height:1.7}
+}
+@media(max-width:360px){
+ .story-art{min-height:680px;padding:26px 15px}
+ .story-art-copy{padding:10px 8px 14px}
+ .story-lines{font-size:16px}
+}
