@@ -1,0 +1,57 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+:root{--ink:#202320;--muted:#666962;--line:#e7e8e5;--soft:#f5f6f4;--accent:#2c413a}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:#eceeeb;color:var(--ink);font-family:Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;word-break:keep-all;-webkit-font-smoothing:antialiased}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}.page{width:min(860px,100%);margin:0 auto;background:#fff;min-height:100vh;overflow:hidden}.site-head{background:#fff;position:sticky;top:0;z-index:30;box-shadow:0 1px 0 var(--line)}.logo{height:69px;display:flex;align-items:baseline;justify-content:center;gap:10px;padding:18px}.logo b{font-family:Pretendard, sans-serif;font-size:20px;letter-spacing:-.05em}.small-logo{font-family:Pretendard, sans-serif;font-size:12px;font-weight:700;letter-spacing:.2em}.tabs{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.tabs a{font:700 15px Pretendard, sans-serif;min-height:68px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:#777;border-bottom:4px solid transparent;letter-spacing:.04em}.tabs a+ a{border-left:1px solid var(--line)}.tabs a span{font:500 13px Pretendard,'Malgun Gothic',sans-serif;letter-spacing:0}.tabs a.active{color:var(--ink);border-bottom-color:#252f2a;background:#fafbf9}.eyebrow{font:700 12px Pretendard, sans-serif;letter-spacing:.17em;color:#69776b}.hero{text-align:center;padding:72px 0 0}.hero>.eyebrow,.hero>h1,.hero>p:not(.photo-caption){margin-left:24px;margin-right:24px}.hero h1{font-family:Pretendard, sans-serif;font-weight:600;font-size:clamp(30px,5.5vw,49px);line-height:1.4;letter-spacing:-.06em;margin-top:22px;margin-bottom:12px}.hero h1 span{display:block;font-size:1.17em}.hero>p{font-size:17px;line-height:1.7;color:#5f645e;margin-bottom:36px}.hero-photo{width:100%;background:#f1f1ef}.hero-photo img{width:100%;height:auto;max-height:980px;object-fit:contain}.photo-caption{font-size:12px!important;text-align:center;margin:0!important;padding:13px;color:#797c77!important;background:#f7f8f6}.panel{padding:92px 54px}.panel h2{font-family:Pretendard, sans-serif;letter-spacing:-.06em;font-size:clamp(28px,4.7vw,43px);font-weight:600;line-height:1.5;margin:19px 0 26px}.bodycopy{font-size:19px;line-height:2;color:#464d47;margin:0 0 28px}.intro-problem{background:#f4f5f2}.statement{margin:42px 0;padding:27px 28px;border-left:3px solid #506c60;background:#fff;font-size:clamp(24px,4vw,33px);font-weight:700;line-height:1.7;letter-spacing:-.055em}.wide-img{width:100%;max-height:470px;object-fit:cover;object-position:center}.imageline{margin:12px 0 0;color:#737b74;font-size:14px;line-height:1.65}.voices{background:#fff}.voice{border-top:1px solid var(--line);padding:29px 0}.voice p{font-size:clamp(21px,3.6vw,28px);letter-spacing:-.04em;line-height:1.65;font-weight:700;margin:0 0 14px}.voice span{display:block;color:#737870;font-size:14px}.fine{font-size:14px;color:#777c76;line-height:1.9;margin:21px 0 0}.storypanel{border-top:1px solid #e3e5e2}.soft{background:#f5f6f4}.storypanel .wide-img{margin-top:14px}.emphasis{font-weight:700;color:#293a30}.product{background:#f9f9f7}.product-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px}.product-photos img{height:420px;width:100%;object-fit:cover;background:#eee}.product-photos.single{grid-template-columns:1fr}.product-photos.single img{height:auto;max-height:780px;object-fit:contain}.specs dl{margin:30px 0;border-top:2px solid #303b34}.specs dl div{display:grid;grid-template-columns:170px 1fr;border-bottom:1px solid #e0e2df;gap:14px;padding:20px 0;font-size:16px;line-height:1.7}.specs dt{font-weight:700}.specs dd{margin:0;color:#646961}.usage{background:#f5f6f3}.checklist{border-top:1px solid #d7dbd5}.checklist p{border-bottom:1px solid #d7dbd5;font-size:19px;padding:20px 0;margin:0}.checklist b{display:inline-block;margin-right:23px;color:#567164;font:700 15px Pretendard, sans-serif}.closing{background:#28382f;text-align:center;color:#fff;padding:80px 25px}.closing .eyebrow{color:#bbc9bd}.closing h2{font-family:Pretendard;font-size:clamp(28px,4vw,38px);letter-spacing:-.06em}.closing p{font-size:18px;line-height:1.9;color:#e3e9e3}.closing-links{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:32px}.closing-links a{border:1px solid #e8eae6;color:#fff;padding:14px 20px;font-size:15px;min-height:48px}.foot{padding:48px 35px;text-align:center;color:#5a645e;background:#fff}.foot strong{letter-spacing:.22em}.foot p{margin:10px 0}.black .tabs a.active{border-bottom-color:#222}.black .hero-photo{background:#e5e6e3}@media(max-width:600px){.logo{height:59px}.tabs a{min-height:59px;font-size:14px}.tabs a span{font-size:12px}.hero{padding-top:49px}.hero>p{font-size:16px;margin-bottom:25px}.panel{padding:67px 20px}.panel h2{font-size:clamp(28px,8vw,35px);margin:15px 0 23px}.bodycopy{font-size:17px;line-height:1.95}.statement{margin:32px 0;padding:24px 17px;font-size:25px}.wide-img{max-height:360px}.voice{padding:24px 0}.voice p{font-size:21px}.fine{font-size:13px}.product-photos{grid-template-columns:1fr}.product-photos img{height:auto;max-height:650px;object-fit:contain}.specs dl div{grid-template-columns:112px 1fr;font-size:15px;gap:10px;padding:16px 0}.checklist p{font-size:17px}.closing{padding:65px 18px}.closing p{font-size:17px}}@media(max-width:340px){.panel{padding:56px 15px}.hero h1{font-size:29px}.logo b{font-size:18px}.tabs a{font-size:12px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* 2026-11 revised product guidance */
+.possibilities{background:#f7f8f5;border-top:1px solid #e4e7e1}.consult{background:#fff;border-top:1px solid #e4e7e1}.consult-note{font-size:16px;line-height:1.8;border-top:1px solid #dce0db;padding-top:20px;color:#455448}.photo-note{font-size:14px;color:#6c756c;margin:12px 0 0}.black .product-photos.single img{max-height:none;width:100%;height:auto;object-fit:contain}@media(max-width:600px){.photo-note{font-size:13px}.consult-note{font-size:16px}.fine{font-size:14px}}
+
+/* Story image sections: actual background JPGs can be replaced in assets keeping names. */
+html,body{max-width:100%;overflow-x:hidden}
+.page{width:100%;max-width:860px;margin-inline:auto}
+.story-intro{text-align:center;padding:78px 22px 66px;background:#fff}
+.story-intro h2{font-family:Pretendard, sans-serif;font-size:clamp(30px,5vw,44px);letter-spacing:-.055em;line-height:1.45;margin:14px 0 12px}
+.story-intro>p:last-child{font-size:18px;line-height:1.8;margin:0;color:#505850}
+.story-art{position:relative;isolation:isolate;width:100%;min-height:680px;display:flex;align-items:center;padding:80px clamp(24px,8%,72px);background-size:cover;background-repeat:no-repeat;background-position:center}
+.story-art::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(252,250,244,.94) 0%,rgba(252,250,244,.88) 42%,rgba(252,250,244,.38) 75%,rgba(252,250,244,.10) 100%);z-index:-1}
+.story-align-right{justify-content:flex-end}
+.story-align-right::before{background:linear-gradient(270deg,rgba(252,250,244,.94) 0%,rgba(252,250,244,.88) 42%,rgba(252,250,244,.38) 75%,rgba(252,250,244,.10) 100%)}
+.story-art-01{background-image:url('story_01.jpg')}
+.story-art-02{background-image:url('story_02.jpg')}
+.story-art-03{background-image:url('story_03.jpg')}
+.story-art-04{background-image:url('story_04.jpg')}
+.story-art-05{background-image:url('story_05.jpg')}
+.story-art-copy{width:min(100%,540px);position:relative}
+.story-no{font-size:13px;font-weight:700;letter-spacing:.15em;color:#536258}
+.story-kicker{font-size:17px;margin:17px 0 8px;font-weight:700;color:#4c5b50}
+.story-art h2{font-family:Pretendard, sans-serif;font-size:clamp(30px,5vw,43px);letter-spacing:-.06em;line-height:1.45;margin:0 0 28px;font-weight:700;color:#202720}
+.story-lines{font-size:19px;line-height:1.9;letter-spacing:-.035em;color:#343b34;margin:0;font-weight:500}
+@media(max-width:767px){
+ .story-intro{padding:65px 18px 54px}.story-intro>p:last-child{font-size:17px}
+ .story-art{min-height:600px;padding:64px 20px;align-items:flex-start;background-position:center}
+ .story-art::before,.story-align-right::before{background:linear-gradient(180deg,rgba(252,250,244,.97) 0%,rgba(252,250,244,.92) 43%,rgba(252,250,244,.58) 69%,rgba(252,250,244,.07) 100%)}
+ .story-align-right{justify-content:flex-start}
+ .story-art h2{font-size:clamp(29px,7.3vw,36px);margin-bottom:22px}
+ .story-lines{font-size:17px;line-height:1.85}.story-kicker{font-size:16px}
+}
+@media(max-width:360px){.story-art{padding:55px 15px;min-height:570px}.story-lines{font-size:16px}.story-art h2{font-size:28px}}
+
+/* Verified story originals, visible captions and true 860px responsive detail width. */
+html,body{overflow-x:clip}
+.page{width:100%;max-width:860px;margin-inline:auto;overflow:clip}
+.story-intro{padding:76px 20px 57px}
+.story-art{display:block;position:relative;isolation:isolate;box-sizing:border-box;width:100%;min-height:0;aspect-ratio:912 / 1136;padding:clamp(24px,4.6vw,42px) clamp(22px,5.3vw,46px);background-color:#f9f2e5;background-repeat:no-repeat;background-size:100% 100%;background-position:center;overflow:hidden}
+.story-art::before,.story-align-right::before{display:none!important;content:none!important}
+.story-art-copy{position:relative;z-index:2;width:100%;max-width:680px;text-align:left}
+.story-no{font-size:clamp(11px,1.5vw,13px);color:#6b655b;letter-spacing:.12em;font-weight:700}
+.story-kicker{font-size:clamp(15px,2.1vw,19px);font-weight:700;color:#695542;margin:9px 0 4px}
+.story-art h2{font-family:Pretendard,'Malgun Gothic',sans-serif;font-size:clamp(26px,4.4vw,38px);line-height:1.3;font-weight:800;letter-spacing:-.065em;margin:4px 0 14px;color:#1d1c1b}
+.story-lines{font-size:clamp(16px,2.35vw,20px);line-height:1.62;font-weight:550;letter-spacing:-.043em;color:#282521;margin:0;word-break:keep-all}
+@media(max-width:600px){
+ .story-intro{padding:56px 15px 43px}
+ .story-art{aspect-ratio:auto;min-height:690px;padding:37px 19px 0;background-size:100% auto;background-position:center bottom}
+ .story-art h2{font-size:clamp(26px,7.2vw,33px);margin-bottom:12px}
+ .story-lines{font-size:clamp(16px,4.2vw,18px);line-height:1.65}
+ .story-kicker{font-size:16px}
+}
+@media(max-width:380px){.story-art{min-height:685px;padding:34px 15px 0}.story-art h2{font-size:26px}.story-lines{font-size:16px}}
+
+/* Unified Pretendard typography: all pages, components and mobile */
+html,body,button,input,select,textarea{font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif}
