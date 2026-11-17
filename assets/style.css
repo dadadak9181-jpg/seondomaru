@@ -77,3 +77,571 @@ body{background:#eeeeec;font-family:Pretendard,'Apple SD Gothic Neo','Malgun Got
  .story-art-copy{padding:10px 8px 14px}
  .story-lines{font-size:16px}
 }
+
+/* SUNDOMARU STORY TYPE 2026-11-15 */
+
+/* 스토리 원형 숫자 */
+.story-art-copy::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    background: #574b3e;
+    color: #fff;
+    font-family: Pretendard, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1;
+}
+.story-art-01 .story-art-copy::before { content: "1"; }
+.story-art-02 .story-art-copy::before { content: "2"; }
+.story-art-03 .story-art-copy::before { content: "3"; }
+.story-art-04 .story-art-copy::before { content: "4"; }
+.story-art-05 .story-art-copy::before { content: "5"; }
+
+/* PC 글씨 확대 */
+.story-art h2 {
+    font-size: 46px;
+    line-height: 1.32;
+}
+.story-art .story-lines {
+    font-size: 23px;
+    line-height: 1.65;
+}
+.story-art .story-kicker {
+    font-size: 20px;
+}
+
+/* 모바일 글씨 확대 */
+@media (max-width: 767px) {
+    .story-art-copy::before {
+        width: 48px;
+        height: 48px;
+        font-size: 25px;
+        margin-bottom: 12px;
+    }
+    .story-art h2 {
+        font-size: clamp(28px, 7.7vw, 36px);
+        line-height: 1.34;
+    }
+    .story-art .story-lines {
+        font-size: 19px;
+        line-height: 1.62;
+    }
+    .story-art .story-kicker {
+        font-size: 17px;
+    }
+}
+
+/* SUNDOMARU CONSULT SPACING START */
+.consult {
+    padding-top: 75px;
+    padding-bottom: 60px;
+}
+.consult .bodycopy {
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+.consult .bodycopy:last-of-type {
+    margin-bottom: 0;
+}
+.consult .consult-note {
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+    .consult {
+        padding-top: 55px;
+        padding-bottom: 50px;
+    }
+}
+/* SUNDOMARU CONSULT SPACING END */
+
+/* SUNDOMARU PROBLEM LAYOUT START */
+.intro-problem h2,
+.intro-problem .problem-copy,
+.intro-problem .statement,
+.intro-problem .imageline {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-problem h2 {
+    text-align: center;
+}
+
+.intro-problem .problem-copy {
+    text-align: left;
+    margin-bottom: 14px;
+    line-height: 1.8;
+}
+
+.intro-problem .problem-copy:last-of-type {
+    margin-bottom: 0;
+}
+
+.intro-problem .statement {
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+@media (max-width: 767px) {
+    .intro-problem h2,
+    .intro-problem .problem-copy,
+    .intro-problem .statement,
+    .intro-problem .imageline {
+        max-width: 100%;
+    }
+
+    .intro-problem .problem-copy {
+        margin-bottom: 12px;
+        line-height: 1.75;
+    }
+
+    .intro-problem .statement {
+        margin-top: 26px;
+        margin-bottom: 26px;
+    }
+}
+/* SUNDOMARU PROBLEM LAYOUT END */
+
+/* STORY GAP 30PX START */
+.story-art + .story-art {
+    margin-top: 30px;
+}
+/* STORY GAP 30PX END */
+
+/* SUNDOMARU STORY CARD START */
+
+/* 스토리 카드뉴스 */
+.story-art {
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* 카드 사이 간격 */
+.story-art + .story-art {
+    margin-top: 30px;
+}
+
+/* 모바일도 동일하게 유지 */
+@media (max-width: 767px) {
+    .story-art {
+        width: calc(100% - 40px);
+        border-radius: 20px;
+    }
+
+    .story-art + .story-art {
+        margin-top: 30px;
+    }
+}
+
+/* SUNDOMARU STORY CARD END */
+
+/* PROBLEM LEFT ALIGN START */
+
+/* 문제제기 전체 왼쪽 정렬 */
+.intro-problem {
+    text-align: left;
+}
+
+/* 제목과 본문 시작점 통일 */
+.intro-problem > .eyebrow,
+.intro-problem > h2,
+.intro-problem > .bodycopy,
+.intro-problem > .problem-copy {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
+
+/* 흰색 박스 및 세로 라인 제거 */
+.intro-problem > .statement {
+    background: transparent;
+    border: 0;
+    border-left: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 32px 0 0;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+    .intro-problem > .statement {
+        margin-top: 24px;
+        padding: 0;
+    }
+}
+
+/* PROBLEM LEFT ALIGN END */
+
+/* STORY NUMBER LEAD START */
+
+/* 숫자와 리드글 한 줄 배치 */
+.story-art-copy {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    column-gap: 12px;
+    align-items: center;
+}
+
+/* 원형 숫자 축소 */
+.story-art-copy::before {
+    grid-column: 1;
+    grid-row: 1;
+    width: 42px;
+    height: 42px;
+    margin: 0;
+    font-size: 22px;
+}
+
+/* 숫자 오른쪽 리드글 */
+.story-art .story-kicker {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* 큰 제목 및 본문은 아래 전체 폭 */
+.story-art h2 {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin-top: 18px;
+}
+
+.story-art .story-lines {
+    grid-column: 1 / -1;
+    grid-row: 3;
+}
+
+/* 모바일에서도 동일한 구조 */
+@media (max-width: 767px) {
+    .story-art-copy {
+        grid-template-columns: 44px minmax(0, 1fr);
+        column-gap: 12px;
+    }
+
+    .story-art-copy::before {
+        width: 42px;
+        height: 42px;
+        font-size: 22px;
+    }
+
+    .story-art .story-kicker {
+        font-size: 18px;
+    }
+}
+
+/* STORY NUMBER LEAD END */
+
+/* STORY SMALL NUMBER START */
+.story-art-copy {
+    grid-template-columns: 32px minmax(0, 1fr);
+    column-gap: 10px;
+}
+
+.story-art-copy::before {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    margin: 0;
+}
+
+.story-art .story-kicker {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+@media (max-width: 767px) {
+    .story-art-copy {
+        grid-template-columns: 32px minmax(0, 1fr);
+        column-gap: 10px;
+    }
+
+    .story-art-copy::before {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+    }
+}
+/* STORY SMALL NUMBER END */
+
+/* PROBLEM SPACING FINAL START */
+
+/* 본문 줄 간격 180%, 불필요한 문단 여백 제거 */
+.intro-problem > .bodycopy,
+.intro-problem > .problem-copy {
+    line-height: 1.8;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* 제목과 본문 사이 */
+.intro-problem > h2 {
+    margin-bottom: 24px;
+}
+
+/* 본문과 강조 문구 사이 */
+.intro-problem > .statement {
+    margin-top: 32px;
+    margin-bottom: 30px !important;
+}
+
+/* 강조 문구와 이미지 사이 정확히 30px */
+.intro-problem > .statement + .wide-img {
+    display: block;
+    margin-top: 0;
+}
+
+/* PROBLEM SPACING FINAL END */
+
+/* SUNDOMARU LOCAL PRODUCT INFORMATION V1 START */
+.sundomaru-table-lead {font-size:18px;line-height:1.8;margin:0 0 24px;color:#4b534a}
+.sundomaru-info-table {margin-top:28px!important;border-top:2px solid #293b30!important}
+.sundomaru-info-table>div {grid-template-columns:165px minmax(0,1fr)!important;gap:18px!important;padding:17px 0!important}
+.sundomaru-info-table dt {word-break:keep-all}
+.sundomaru-info-table dd {overflow-wrap:anywhere;line-height:1.8}
+.sundomaru-steps>div {padding:21px 0;border-bottom:1px solid #d9dfd8}
+.sundomaru-steps>div:first-child {border-top:1px solid #d9dfd8}
+.sundomaru-steps b {font-size:19px;color:#354b3b}
+.sundomaru-steps p {font-size:18px;line-height:1.8;margin:10px 0 0}
+.sundomaru-notices {background:#f8f8f5}
+.sundomaru-notice-list {padding-left:25px;margin:22px 0 0}
+.sundomaru-notice-list li {padding:12px 0 12px 3px;font-size:17px;line-height:1.75;border-bottom:1px solid #e2e3dd}
+.sundomaru-origin .bodycopy,.sundomaru-notices .bodycopy {line-height:1.8}
+@media(max-width:600px){
+.sundomaru-info-table>div {grid-template-columns:108px minmax(0,1fr)!important;gap:11px!important;font-size:15px!important}
+.sundomaru-steps p {font-size:16px}
+.sundomaru-notice-list li {font-size:16px}
+.sundomaru-table-lead {font-size:16px}
+}
+/* SUNDOMARU LOCAL PRODUCT INFORMATION V1 END */
+
+/* VOICE SCENARIOS START */
+.voices .voice-scenario {padding:28px 0;border-top:1px solid #e4e6e1;}
+.voices .voice-scenario h3 {margin:0 0 12px;font-size:24px;line-height:1.5;font-weight:700;letter-spacing:-.04em;}
+.voices .voice-scenario p {margin:0;font-size:18px;line-height:1.8;font-weight:400;letter-spacing:-.02em;}
+@media(max-width:600px){
+.voices .voice-scenario h3 {font-size:21px;}
+.voices .voice-scenario p {font-size:17px;}
+}
+/* VOICE SCENARIOS END */
+
+/* STORY INTRO LEFT ALIGN START */
+.story-intro {
+    text-align: left !important;
+    padding-left: 54px;
+    padding-right: 54px;
+}
+
+.story-intro h2,
+.story-intro .eyebrow,
+.story-intro p {
+    text-align: left !important;
+}
+
+@media (max-width: 767px) {
+    .story-intro {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+/* STORY INTRO LEFT ALIGN END */
+
+/* STORY INTRO LINE ALIGN START */
+.story-intro {
+    text-align: left !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+/* STORY INTRO LINE ALIGN END */
+
+/* SUNDOMARU UNIFIED ALIGN START */
+.page > main > .panel {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.page .story-intro {
+  text-align: left !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.page .story-intro > * {
+  text-align: left !important;
+}
+.page .panel > .eyebrow,
+.page .panel > h2,
+.page .panel > .bodycopy,
+.page .panel > .statement {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-align: left !important;
+}
+/* SUNDOMARU UNIFIED ALIGN END */
+
+/* VOICES COLOR FIX START */
+.page .voices {
+    color: #202320 !important;
+    opacity: 1 !important;
+}
+
+.page .voices > h2,
+.page .voices .voice-scenario h3 {
+    color: #202320 !important;
+    opacity: 1 !important;
+}
+
+.page .voices .voice-scenario p {
+    color: #343934 !important;
+    opacity: 1 !important;
+}
+
+.page .voices > .eyebrow {
+    color: #69776b !important;
+    opacity: 1 !important;
+}
+/* VOICES COLOR FIX END */
+
+/* OWNER CARDS V1 START */
+.page .seondomaru-owner-voices { background:#fff; color:#202320; }
+.page .seondomaru-owner-voices > h2 { color:#202320 !important; margin:16px 0 27px; text-align:left; }
+.page .seondomaru-owner-voices > .eyebrow { color:#6b716b !important; }
+.page .seondomaru-owner-voices .owner-card {
+  position:relative; box-sizing:border-box; overflow:hidden;
+  min-height:240px; border:1px solid #dedfdb; border-radius:16px;
+  background:#fff; margin:0 0 18px; padding:24px 32% 24px 24px;
+  display:flex; align-items:center;
+}
+.page .seondomaru-owner-voices .owner-card-copy {position:relative; z-index:1; width:100%;}
+.page .seondomaru-owner-voices .owner-card-num {font-size:13px; font-weight:700; color:#6b716b; margin-bottom:8px;}
+.page .seondomaru-owner-voices .owner-card h3 {font-size:23px; color:#202320 !important; margin:0 0 13px; line-height:1.4; font-weight:750; letter-spacing:-.045em;}
+.page .seondomaru-owner-voices .owner-card p {font-size:17px; color:#343934 !important; margin:0; line-height:1.75; font-weight:400; letter-spacing:-.02em;}
+.page .seondomaru-owner-voices .owner-card img {
+  position:absolute; right:0; bottom:0; width:31%; height:98%;
+  object-fit:contain; object-position:right bottom; opacity:1;
+}
+@media (max-width:600px) {
+ .page .seondomaru-owner-voices .owner-card {min-height:204px; border-radius:12px; margin-bottom:14px; padding:16px 35% 16px 16px;}
+ .page .seondomaru-owner-voices .owner-card-num {font-size:11px; margin-bottom:5px;}
+ .page .seondomaru-owner-voices .owner-card h3 {font-size:17px; margin-bottom:8px; line-height:1.42;}
+ .page .seondomaru-owner-voices .owner-card p {font-size:15px; line-height:1.55;}
+ .page .seondomaru-owner-voices .owner-card img {width:35%; height:90%;}
+}
+/* OWNER CARDS V1 END */
+
+/* OWNER SOURCE STYLE START */
+.seondomaru-owner-voices .owner-card .owner-source {
+    display: block;
+    margin-top: 14px;
+    font-family: Pretendard, sans-serif;
+    font-size: 15px !important;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #777777 !important;
+    text-align: left;
+}
+/* OWNER SOURCE STYLE END */
+
+/* OWNER CARD FONT FIX START */
+.seondomaru-owner-voices .owner-card {
+    background: #f8f8f8 !important;
+}
+
+.seondomaru-owner-voices .owner-card-copy h3 {
+    font-size: 28px !important;
+    line-height: 1.35 !important;
+    font-weight: 700;
+}
+
+.seondomaru-owner-voices .owner-card-copy p {
+    font-size: 20px !important;
+    line-height: 1.7 !important;
+}
+
+.seondomaru-owner-voices .owner-card-copy .owner-source {
+    display: block;
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    color: #777777 !important;
+    font-weight: 400 !important;
+}
+/* OWNER CARD FONT FIX END */
+
+/* SUNDOMARU ACCENT START */
+
+/* 현장의 고민: 청록색 짧은 강조선 */
+.page .intro-problem h2::after {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 3px;
+    margin-top: 18px;
+    background: #009793;
+    border-radius: 2px;
+}
+
+/* 사장님들의 고민: 파란색 짧은 강조선 */
+.page .seondomaru-owner-voices > h2::after {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 3px;
+    margin-top: 18px;
+    background: #096C8A;
+    border-radius: 2px;
+}
+
+/* 선택된 탭의 하단선 */
+.page .tabs a.active,
+.page .tabs a[aria-current="page"],
+.page .tabs .active,
+.page .tab.active {
+    border-bottom-color: #009793 !important;
+}
+
+/* 키보드 접근 시 포인트 표시 */
+.page a:focus-visible,
+.page button:focus-visible {
+    outline: 2px solid #096C8A;
+    outline-offset: 3px;
+}
+
+/* SUNDOMARU ACCENT END */
+
+/* STORY ACCENT FIX START */
+
+/* 숫자 원형 배경 */
+.story-art .story-no {
+    background-color: #009793 !important;
+    color: #fff !important;
+}
+
+/* 숫자 옆 설명 */
+.story-art .story-kicker {
+    color: #333 !important;
+}
+
+/* 기존에 추가한 장식선 제거 */
+.page .intro-problem h2::after,
+.page .seondomaru-owner-voices > h2::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* STORY ACCENT FIX END */
